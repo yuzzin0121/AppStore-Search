@@ -33,6 +33,15 @@ final class SearchViewController: BaseViewController {
                 cell.selectionStyle = .none
             }
             .disposed(by: disposeBag)
+        
+        Observable.zip(mainView.tableView.rx.itemSelected, mainView.tableView.rx.modelSelected(App.self))
+            .map { $0.1 }
+            .subscribe(with: self) { owner, app in
+                let appDetailVC = AppDetailViewController()
+                appDetailVC.viewModel.app = app
+                owner.navigationController?.pushViewController(appDetailVC, animated: true)
+            }
+            .disposed(by: disposeBag)
     }
     
     

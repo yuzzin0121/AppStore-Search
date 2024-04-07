@@ -33,6 +33,9 @@
 		619F25F52BC2F6FA0067F534 /* AppStoreAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25F42BC2F6FA0067F534 /* AppStoreAPIManager.swift */; };
 		619F25F72BC3025A0067F534 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25F62BC3025A0067F534 /* AppDetailViewController.swift */; };
 		619F25FA2BC3026A0067F534 /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25F92BC3026A0067F534 /* AppDetailView.swift */; };
+		619F25FC2BC304000067F534 /* AppDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25FB2BC304000067F534 /* AppDetailViewModel.swift */; };
+		619F25FF2BC304E50067F534 /* DownLoadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25FE2BC304E50067F534 /* DownLoadButton.swift */; };
+		619F26012BC308C40067F534 /* ScreenshotImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F26002BC308C40067F534 /* ScreenshotImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		619F25F42BC2F6FA0067F534 /* AppStoreAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAPIManager.swift; sourceTree = "<group>"; };
 		619F25F62BC3025A0067F534 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		619F25F92BC3026A0067F534 /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
+		619F25FB2BC304000067F534 /* AppDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewModel.swift; sourceTree = "<group>"; };
+		619F25FE2BC304E50067F534 /* DownLoadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadButton.swift; sourceTree = "<group>"; };
+		619F26002BC308C40067F534 /* ScreenshotImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 		619F25AA2BC19C700067F534 /* AppStore-Search */ = {
 			isa = PBXGroup;
 			children = (
+				619F25FD2BC304D90067F534 /* CustomView */,
 				619F25C62BC19DE60067F534 /* Base */,
 				619F25D02BC2C58A0067F534 /* Protocol */,
 				619F25CF2BC2C5750067F534 /* Enum */,
@@ -223,8 +230,18 @@
 			children = (
 				619F25F62BC3025A0067F534 /* AppDetailViewController.swift */,
 				619F25F92BC3026A0067F534 /* AppDetailView.swift */,
+				619F25FB2BC304000067F534 /* AppDetailViewModel.swift */,
 			);
 			path = AppDetail;
+			sourceTree = "<group>";
+		};
+		619F25FD2BC304D90067F534 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				619F25FE2BC304E50067F534 /* DownLoadButton.swift */,
+				619F26002BC308C40067F534 /* ScreenshotImageView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +328,12 @@
 				619F25C32BC19DAA0067F534 /* SearchView.swift in Sources */,
 				619F25D42BC2C6780067F534 /* ImageStyle.swift in Sources */,
 				619F25C52BC19DB10067F534 /* SearchViewModel.swift in Sources */,
+				619F26012BC308C40067F534 /* ScreenshotImageView.swift in Sources */,
 				619F25C12BC19D9F0067F534 /* SearchViewController.swift in Sources */,
 				619F25DE2BC2CC970067F534 /* GameViewController.swift in Sources */,
 				619F25C82BC19DEE0067F534 /* BaseView.swift in Sources */,
 				619F25AC2BC19C700067F534 /* AppDelegate.swift in Sources */,
+				619F25FC2BC304000067F534 /* AppDetailViewModel.swift in Sources */,
 				619F25F32BC2F4F40067F534 /* AppSearchModel.swift in Sources */,
 				619F25DC2BC2CC850067F534 /* AppViewController.swift in Sources */,
 				619F25E02BC2CCAD0067F534 /* TodayViewController.swift in Sources */,
@@ -326,6 +345,7 @@
 				619F25DA2BC2CC6A0067F534 /* ArcadeViewController.swift in Sources */,
 				619F25F52BC2F6FA0067F534 /* AppStoreAPIManager.swift in Sources */,
 				619F25FA2BC3026A0067F534 /* AppDetailView.swift in Sources */,
+				619F25FF2BC304E50067F534 /* DownLoadButton.swift in Sources */,
 				619F25D22BC2C5FA0067F534 /* TabItem.swift in Sources */,
 				619F25F72BC3025A0067F534 /* AppDetailViewController.swift in Sources */,
 			);

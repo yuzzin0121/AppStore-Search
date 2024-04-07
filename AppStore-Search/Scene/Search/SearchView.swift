@@ -24,7 +24,7 @@ final class SearchView: BaseView {
     }
     override func configureView() {
         searchController.searchBar.placeholder = "게임, 앱, 스토리 등"
-        tableView.backgroundColor = .systemGray6
+        tableView.backgroundColor = .white
         tableView.register(AppTableViewCell.self, forCellReuseIdentifier: AppTableViewCell.identifier)
         tableView.separatorStyle = .none
     }

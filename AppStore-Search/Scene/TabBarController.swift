@@ -43,6 +43,7 @@ final class TabBarController: UITabBarController {
         searchNav.tabBarItem = UITabBarItem(title: nil, image: TabItem.search.image, selectedImage: TabItem.search.selectedImage)
         
         viewControllers = [todayNav, gameNav, appNav, arcadeNav, searchNav]
+        selectedIndex = TabItem.search.rawValue
     }
 
 }

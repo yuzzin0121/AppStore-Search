@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum TabItem: CaseIterable {
+enum TabItem: Int, CaseIterable {
     case today
     case game
     case app

@@ -7,12 +7,30 @@
 
 import UIKit
 
-class AppDetailViewController: BaseViewController {
+final class AppDetailViewController: BaseViewController {
     let mainView = AppDetailView()
+    
+    let viewModel = AppDetailViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setData()
+    }
+    
+    private func setData() {
+        guard let appData = viewModel.app else { return }
+        mainView.iconImageView.kf.setImage(with: URL(string: appData.artworkUrl60))
+        mainView.titleLabel.text = appData.trackName
+        mainView.updateLabel.text = appData.releaseNotes
+        mainView.descriptionLabel.text = appData.description
+        
+        for url in appData.screenshotUrls.prefix(3) {
+            guard let url = URL(string: url) else { return }
+            let imageView = ScreenshotImageView(frame: .zero)
+            imageView.kf.setImage(with: url)
+            mainView.previewStackView.addArrangedSubview(imageView)
+        }
         
     }
     
@@ -21,6 +39,6 @@ class AppDetailViewController: BaseViewController {
     }
     
     override func configureNavigationItem() {
-        
+        navigationItem.largeTitleDisplayMode = .never
     }
 }
