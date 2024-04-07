@@ -6,15 +6,35 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class SearchViewController: BaseViewController {
+final class SearchViewController: BaseViewController {
     let mainView = SearchView()
+    
+    let viewModel = SearchViewModel()
+    let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        bind()
     }
+    
+    private func bind() {
+        let input = SearchViewModel.Input(searchButtonTap: mainView.searchController.searchBar.rx.searchButtonClicked,
+                                          searchText: mainView.searchController.searchBar.rx.text.orEmpty)
+        
+        let output = viewModel.transform(input: input)
+        
+        output.appList
+            .bind(to: mainView.tableView.rx.items(cellIdentifier: AppTableViewCell.identifier, cellType: AppTableViewCell.self)) { (row, element, cell) in
+                cell.configureCell(item: element)
+                cell.selectionStyle = .none
+            }
+            .disposed(by: disposeBag)
+    }
+    
     
     override func loadView() {
         view = mainView
@@ -23,6 +43,7 @@ class SearchViewController: BaseViewController {
     override func configureNavigationItem() {
         super.configureNavigationItem()
         navigationItem.title = "검색"
+        navigationItem.searchController = mainView.searchController
     }
 
 }
