@@ -41,13 +41,19 @@ class AppTableViewCell: UITableViewCell {
         for url in item.screenshotUrls.prefix(3) {
             guard let url = URL(string: url) else { return }
             let imageView = UIImageView()
-            imageView.contentMode = .scaleAspectFill
-            imageView.layer.cornerRadius = 8
-            imageView.clipsToBounds = true
+            designImageView(imageView)
             
             imageView.kf.setImage(with: url)
             thumbnailStackView.addArrangedSubview(imageView)
         }
+    }
+    
+    private func designImageView(_ imageView: UIImageView) {
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 10
+        imageView.clipsToBounds = true
+        imageView.layer.borderWidth = 1
+        imageView.layer.borderColor = UIColor.systemGray5.cgColor
     }
 }
 
