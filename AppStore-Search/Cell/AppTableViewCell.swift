@@ -30,7 +30,7 @@ class AppTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         configureCell(item: nil)
-        
+        thumbnailStackView = UIStackView()
     }
     
     func configureCell(item: App?) {
