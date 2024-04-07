@@ -62,7 +62,7 @@ extension AppTableViewCell: ViewProtocol {
     func configureLayout() {
         iconImageView.snp.makeConstraints { make in
             make.top.leading.equalToSuperview().offset(20)
-            make.size.equalTo(40)
+            make.size.equalTo(60)
         }
         
         titleLabel.snp.makeConstraints { make in
@@ -89,10 +89,12 @@ extension AppTableViewCell: ViewProtocol {
     func configureView() {
         iconImageView.layer.cornerRadius = 12
         iconImageView.clipsToBounds = true
+        iconImageView.layer.borderWidth = 1
+        iconImageView.layer.borderColor = UIColor.systemGray5.cgColor
         
         downLoadButton.setTitle("받기", for: .normal)
         downLoadButton.setTitleColor(.tintColor, for: .normal)
-        downLoadButton.backgroundColor = .systemGray4
+        downLoadButton.backgroundColor = .systemGray6
         downLoadButton.layer.cornerRadius = 16
         downLoadButton.clipsToBounds = true
         
