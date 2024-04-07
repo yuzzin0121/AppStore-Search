@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		619F25AC2BC19C700067F534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25AB2BC19C700067F534 /* AppDelegate.swift */; };
 		619F25AE2BC19C700067F534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25AD2BC19C700067F534 /* SceneDelegate.swift */; };
-		619F25B32BC19C700067F534 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 619F25B22BC19C700067F534 /* Base */; };
 		619F25B52BC19C710067F534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619F25B42BC19C710067F534 /* Assets.xcassets */; };
 		619F25B82BC19C710067F534 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 619F25B72BC19C710067F534 /* Base */; };
 		619F25C12BC19D9F0067F534 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25C02BC19D9F0067F534 /* SearchViewController.swift */; };
@@ -17,13 +16,19 @@
 		619F25C52BC19DB10067F534 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25C42BC19DB10067F534 /* SearchViewModel.swift */; };
 		619F25C82BC19DEE0067F534 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25C72BC19DEE0067F534 /* BaseView.swift */; };
 		619F25CA2BC19E230067F534 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25C92BC19E230067F534 /* BaseViewController.swift */; };
+		619F25CE2BC2C3EE0067F534 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25CD2BC2C3EE0067F534 /* TabBarController.swift */; };
+		619F25D22BC2C5FA0067F534 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25D12BC2C5FA0067F534 /* TabItem.swift */; };
+		619F25D42BC2C6780067F534 /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25D32BC2C6780067F534 /* ImageStyle.swift */; };
+		619F25DA2BC2CC6A0067F534 /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25D92BC2CC6A0067F534 /* ArcadeViewController.swift */; };
+		619F25DC2BC2CC850067F534 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25DB2BC2CC850067F534 /* AppViewController.swift */; };
+		619F25DE2BC2CC970067F534 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25DD2BC2CC970067F534 /* GameViewController.swift */; };
+		619F25E02BC2CCAD0067F534 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F25DF2BC2CCAD0067F534 /* TodayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		619F25A82BC19C700067F534 /* AppStore-Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppStore-Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		619F25AB2BC19C700067F534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		619F25AD2BC19C700067F534 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		619F25B22BC19C700067F534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619F25B42BC19C710067F534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619F25B72BC19C710067F534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		619F25B92BC19C710067F534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +37,13 @@
 		619F25C42BC19DB10067F534 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		619F25C72BC19DEE0067F534 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		619F25C92BC19E230067F534 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		619F25CD2BC2C3EE0067F534 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		619F25D12BC2C5FA0067F534 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		619F25D32BC2C6780067F534 /* ImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
+		619F25D92BC2CC6A0067F534 /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
+		619F25DB2BC2CC850067F534 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		619F25DD2BC2CC970067F534 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		619F25DF2BC2CCAD0067F534 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +76,13 @@
 		619F25AA2BC19C700067F534 /* AppStore-Search */ = {
 			isa = PBXGroup;
 			children = (
-				619F25C62BC19DE60067F534 /* BaseView */,
-				619F25BF2BC19D880067F534 /* Search */,
+				619F25D02BC2C58A0067F534 /* Protocol */,
+				619F25CF2BC2C5750067F534 /* Enum */,
+				619F25CB2BC2BFB80067F534 /* Network */,
+				619F25C62BC19DE60067F534 /* Base */,
+				619F25CC2BC2C3BE0067F534 /* Scene */,
 				619F25AB2BC19C700067F534 /* AppDelegate.swift */,
 				619F25AD2BC19C700067F534 /* SceneDelegate.swift */,
-				619F25B12BC19C700067F534 /* Main.storyboard */,
 				619F25B42BC19C710067F534 /* Assets.xcassets */,
 				619F25B62BC19C710067F534 /* LaunchScreen.storyboard */,
 				619F25B92BC19C710067F534 /* Info.plist */,
@@ -86,13 +100,81 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		619F25C62BC19DE60067F534 /* BaseView */ = {
+		619F25C62BC19DE60067F534 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				619F25C72BC19DEE0067F534 /* BaseView.swift */,
 				619F25C92BC19E230067F534 /* BaseViewController.swift */,
 			);
-			path = BaseView;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		619F25CB2BC2BFB80067F534 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		619F25CC2BC2C3BE0067F534 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				619F25BF2BC19D880067F534 /* Search */,
+				619F25D82BC2CC480067F534 /* Arcade */,
+				619F25D72BC2CC430067F534 /* App */,
+				619F25D62BC2CC3F0067F534 /* Game */,
+				619F25D52BC2CC380067F534 /* Today */,
+				619F25CD2BC2C3EE0067F534 /* TabBarController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		619F25CF2BC2C5750067F534 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				619F25D12BC2C5FA0067F534 /* TabItem.swift */,
+				619F25D32BC2C6780067F534 /* ImageStyle.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		619F25D02BC2C58A0067F534 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		619F25D52BC2CC380067F534 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				619F25DF2BC2CCAD0067F534 /* TodayViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		619F25D62BC2CC3F0067F534 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				619F25DD2BC2CC970067F534 /* GameViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		619F25D72BC2CC430067F534 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				619F25DB2BC2CC850067F534 /* AppViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		619F25D82BC2CC480067F534 /* Arcade */ = {
+			isa = PBXGroup;
+			children = (
+				619F25D92BC2CC6A0067F534 /* ArcadeViewController.swift */,
+			);
+			path = Arcade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +237,6 @@
 			files = (
 				619F25B52BC19C710067F534 /* Assets.xcassets in Resources */,
 				619F25B82BC19C710067F534 /* Base in Resources */,
-				619F25B32BC19C700067F534 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,26 +248,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				619F25C32BC19DAA0067F534 /* SearchView.swift in Sources */,
+				619F25D42BC2C6780067F534 /* ImageStyle.swift in Sources */,
 				619F25C52BC19DB10067F534 /* SearchViewModel.swift in Sources */,
 				619F25C12BC19D9F0067F534 /* SearchViewController.swift in Sources */,
+				619F25DE2BC2CC970067F534 /* GameViewController.swift in Sources */,
 				619F25C82BC19DEE0067F534 /* BaseView.swift in Sources */,
 				619F25AC2BC19C700067F534 /* AppDelegate.swift in Sources */,
+				619F25DC2BC2CC850067F534 /* AppViewController.swift in Sources */,
+				619F25E02BC2CCAD0067F534 /* TodayViewController.swift in Sources */,
 				619F25CA2BC19E230067F534 /* BaseViewController.swift in Sources */,
 				619F25AE2BC19C700067F534 /* SceneDelegate.swift in Sources */,
+				619F25CE2BC2C3EE0067F534 /* TabBarController.swift in Sources */,
+				619F25DA2BC2CC6A0067F534 /* ArcadeViewController.swift in Sources */,
+				619F25D22BC2C5FA0067F534 /* TabItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		619F25B12BC19C700067F534 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				619F25B22BC19C700067F534 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		619F25B62BC19C710067F534 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -329,7 +409,7 @@
 				INFOPLIST_FILE = "AppStore-Search/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -362,7 +442,7 @@
 				INFOPLIST_FILE = "AppStore-Search/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
