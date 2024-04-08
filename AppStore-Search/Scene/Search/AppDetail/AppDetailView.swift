@@ -12,17 +12,19 @@ final class AppDetailView: BaseView {
     private let contentView = UIView()
     let iconImageView = UIImageView()
     let titleLabel = UILabel()
-    let updateLabel = UILabel()
     let downLoadButton = DownLoadButton()
-    let previewStackView = UIStackView()
+    private let screenshotScrollView = UIScrollView()
+    let screenshotStackView = UIStackView()
+    let updateLabel = UILabel()
     let descriptionLabel = UILabel()
     
     override func configureHierarchy() {
         addSubview(scrollView)
         scrollView.addSubview(contentView)
-        [iconImageView, titleLabel, updateLabel, downLoadButton, previewStackView, descriptionLabel].forEach {
+        [iconImageView, titleLabel, updateLabel, downLoadButton, screenshotScrollView, descriptionLabel].forEach {
             contentView.addSubview($0)
         }
+        screenshotScrollView.addSubview(screenshotStackView)
     }
     
     override func configureLayout() {
@@ -54,14 +56,19 @@ final class AppDetailView: BaseView {
             make.height.equalTo(32)
         }
         
-        previewStackView.snp.makeConstraints { make in
+        screenshotScrollView.snp.makeConstraints { make in
             make.top.equalTo(iconImageView.snp.bottom).offset(20)
             make.horizontalEdges.equalToSuperview().inset(20)
-            make.height.equalTo(200)
+            make.height.equalTo(250)
+        }
+        
+        screenshotStackView.snp.makeConstraints { make in
+            make.height.equalTo(screenshotScrollView)
+            make.edges.equalTo(screenshotScrollView)
         }
         
         updateLabel.snp.makeConstraints { make in
-            make.top.equalTo(previewStackView.snp.bottom).offset(20)
+            make.top.equalTo(screenshotScrollView.snp.bottom).offset(20)
             make.horizontalEdges.equalToSuperview().inset(20)
         }
         
@@ -77,9 +84,10 @@ final class AppDetailView: BaseView {
         iconImageView.layer.borderWidth = 1
         iconImageView.layer.borderColor = UIColor.systemGray5.cgColor
         
-        previewStackView.axis = .horizontal
-        previewStackView.distribution = .fillEqually
-        previewStackView.alignment = .fill
-        previewStackView.spacing = 12
+        screenshotScrollView.showsHorizontalScrollIndicator = false
+        
+        screenshotStackView.distribution = .fillEqually
+        screenshotStackView.alignment = .fill
+        screenshotStackView.spacing = 12
     }
 }
