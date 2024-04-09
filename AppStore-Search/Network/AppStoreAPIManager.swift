@@ -21,7 +21,7 @@ class AppStoreAPIManager {
     
     func fetchAppData(query: String) -> Single<AppSearchModel> {
         return Single.create { single in
-            guard let url = URL(string: "https://itunes.apple.com/search?term=\(query)&country=kr&entity=software") else {
+            guard let url = URL(string: "https://itunes.apple.com/searchdd?term=\(query)&country=kr&entity=software") else {
                 single(.failure(APIError.unknownReponse))
                 
                 return Disposables.create()

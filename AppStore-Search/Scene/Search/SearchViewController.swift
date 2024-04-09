@@ -36,7 +36,9 @@ final class SearchViewController: BaseViewController {
         
         output.error
             .bind(with: self) { owner, value in
-                owner.showAlert(title: "에러", message: value)
+                DispatchQueue.main.async {
+                    owner.showAlert(title: "에러", message: value)
+                }
             }
             .disposed(by: disposeBag)
         
