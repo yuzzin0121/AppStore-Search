@@ -22,7 +22,7 @@ final class SearchViewModel {
     // 검색 결과
     struct Output {
         let appList: PublishSubject<[App]>
-        let error: PublishSubject<String>
+        let error: PublishRelay<String>
     }
     
     deinit {
@@ -31,7 +31,7 @@ final class SearchViewModel {
     
     func transform(input: Input) -> Output {
         let appList = PublishSubject<[App]>()
-        let errorString = PublishSubject<String>()
+        let errorString = PublishRelay<String>()
         
         input.searchButtonTap
             .throttle(.seconds(1), scheduler: MainScheduler.instance)
@@ -40,7 +40,7 @@ final class SearchViewModel {
             .flatMap {
                 AppStoreAPIManager.shared.fetchAppData(query: $0)
                 .catch { error in
-                    errorString.onNext(error.localizedDescription)
+                    errorString.accept(error.localizedDescription)
                     return Single<AppSearchModel>.never()
                 }
             }

@@ -35,10 +35,9 @@ final class SearchViewController: BaseViewController {
             .disposed(by: disposeBag)
         
         output.error
-            .bind(with: self) { owner, value in
-                DispatchQueue.main.async {
-                    owner.showAlert(title: "에러", message: value)
-                }
+            .asDriver(onErrorJustReturn: "")
+            .drive(with: self) { owner, value in
+                owner.showAlert(title: "에러", message: value)
             }
             .disposed(by: disposeBag)
         
