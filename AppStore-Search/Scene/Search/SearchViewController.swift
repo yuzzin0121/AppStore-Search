@@ -34,6 +34,12 @@ final class SearchViewController: BaseViewController {
             }
             .disposed(by: disposeBag)
         
+        output.error
+            .bind(with: self) { owner, value in
+                owner.showAlert(title: "에러", message: value)
+            }
+            .disposed(by: disposeBag)
+        
         Observable.zip(mainView.tableView.rx.itemSelected, mainView.tableView.rx.modelSelected(App.self))
             .map { $0.1 }
             .subscribe(with: self) { owner, app in
